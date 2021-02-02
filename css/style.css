@@ -44,7 +44,7 @@ a:link, a:visited, a:hover, a:active {
     width: 70%;
 }
 
-.sidemenu {
+.sideMenu {
     width: 30%;
     margin: 0 0 0 8px;
 }
@@ -100,4 +100,60 @@ a:link, a:visited, a:hover, a:active {
 .globalNav__item:hover {
     background-color: #1C497C;
     color: #fff;
+}
+
+
+/* HOT TOPIC(特集コンテンツ)
+----------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+.hotTopic {
+    display: flex;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.15s;
+}
+
+.hotTopic:hover {
+    opacity: 0.85;
+}
+
+.hotTopic__image {
+    width: 50%;
+}
+
+.hotTopic__content {
+    position: relative;
+    width: 50%;
+    padding: 64px 24px 0;
+    background-color: #2d3d54;
+    line-height: 1.6;
+}
+
+.hotTopic__content__title {
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.0rem;
+}
+
+.hotTopic__content__desc {
+    margin: 8px 0 0;
+    color: #ddc;
+}
+
+.hotTopic__content__date {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 144px;
+    padding: 4px;
+    background-color: #fff;
+    color: #2d3d54;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1;
 }
