@@ -67,7 +67,7 @@ a:link, a:visited, a:hover, a:active {
     white-space: nowrap;
 }
 
-.logo a {
+.logo__link {
     display: block;
     width: 100%;
     height: 100%;
@@ -77,13 +77,13 @@ a:link, a:visited, a:hover, a:active {
 /* グローバルナビゲーション
 ----------------------------------------------- */
 
-.global-nav {
+.globalNav {
     display: flex;
     justify-content: center;
     margin: 16px 0 0;
 }
 
-.global-nav__item {
+.globalNav__item {
     width: 100px;
     height: 30px;
     line-height: 30px;
@@ -96,8 +96,8 @@ a:link, a:visited, a:hover, a:active {
     transition: 0.15s;
 }
 
-.global-nav__item.global-nav__item--active,
-.global-nav__item:hover {
+.globalNav__item.globalNav__item--active,
+.globalNav__item:hover {
     background-color: #1C497C;
     color: #fff;
 }
