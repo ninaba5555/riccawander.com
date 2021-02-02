@@ -18,7 +18,7 @@ body {
 }
 
 a:link, a:visited, a:hover, a:active {
-    color: #1C497C;
+    color: #23519B;
     text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ a:link, a:visited, a:hover, a:active {
 
 .globalNav__item.globalNav__item--active,
 .globalNav__item:hover {
-    background-color: #1C497C;
+    background-color: #23519B;
     color: #fff;
 }
 
@@ -128,7 +128,7 @@ a:link, a:visited, a:hover, a:active {
     position: relative;
     width: 50%;
     padding: 64px 24px 0;
-    background-color: #2d3d54;
+    background-color: #1C497C;
     line-height: 1.6;
 }
 
@@ -140,7 +140,7 @@ a:link, a:visited, a:hover, a:active {
 
 .hotTopic__content__desc {
     margin: 8px 0 0;
-    color: #ddc;
+    color: #CFDDE9;
 }
 
 .hotTopic__content__date {
@@ -150,7 +150,7 @@ a:link, a:visited, a:hover, a:active {
     width: 144px;
     padding: 4px;
     background-color: #fff;
-    color: #2d3d54;
+    color: #1C497C;
     text-align: center;
     letter-spacing: 1px;
     font-weight: bold;
