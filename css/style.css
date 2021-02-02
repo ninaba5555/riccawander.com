@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    width: 970px;
+    margin: 24px auto;
+}
+
+.main {
+    display: block;
+    width: 70%;
+}
+
+.sidemenu {
+    width: 30%;
+    margin: 0 0 0 8px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.header, .main, .sidemenu, .footer {
+    border: 1px solid #aaa;
+    background-color: #ccc;
+}
+
+.header, .footer {
+    height: 100px;
+}
+
+.main, .sidemenu {
+    height: 500px;
+}
