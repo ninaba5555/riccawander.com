@@ -201,7 +201,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .scrollList__item__date {
-    width: 16%;
+    width: 20%;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 1.0rem;
@@ -223,7 +223,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .scrollList__item__title {
-    width: 76%;
+    width: 72%;
     margin-left: 8px;
     overflow: hidden;
     text-overflow: ellipsis;
