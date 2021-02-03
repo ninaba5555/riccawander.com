@@ -35,7 +35,7 @@ a:link, a:visited, a:hover, a:active {
 
 .wrapper {
     display: flex;
-    width: 970px;
+    width: 1000px;
     margin: 24px auto;
 }
 
@@ -228,4 +228,78 @@ a:link, a:visited, a:hover, a:active {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 1.2rem;
+}
+
+
+/* ARTICLES(記事)
+----------------------------------------------- */
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article__item {
+    width: 348px; /* (700 - 4) / 2 */
+    height: 376px;
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 216px 16px 0;
+    box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.15s;
+}
+
+.article__item:nth-child(2n) {
+    margin-left: 4px;
+}
+
+.article__item:nth-child(n+3) {
+    margin-top: 12px;
+}
+
+.article__item:hover {
+    opacity: 0.8;
+}
+
+.article__item__title {
+    margin-top: 24px;
+    color: #555;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.article__item__desc {
+    margin-top: 8px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.article__item__date {
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    width: 160px;
+    padding: 4px;
+    background-color: #A9CC7D;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.article__item__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.article__item__image img {
+    width: 100%;
+    height: auto;
 }
