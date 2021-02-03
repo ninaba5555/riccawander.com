@@ -201,21 +201,20 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .scrollList__item__date {
-    width: 20%;
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 1.0rem;
 }
 
 .scrollList__item__category {
-    width: 8%;
+    width: 56px;
     border-radius: 4px;
     background-color: #23519B;
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.0rem;
-    margin-left: 4px;
+    margin-left: 8px;
 }
 
 .scrollList__item__category.scrollList__item__category--news {
@@ -223,7 +222,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .scrollList__item__title {
-    width: 72%;
+    flex: 1;
     margin-left: 8px;
     overflow: hidden;
     text-overflow: ellipsis;
