@@ -103,12 +103,27 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-/* HOT TOPIC(特集コンテンツ)
+/* 見出し
 ----------------------------------------------- */
 
 .hidden {
     display: none;
 }
+
+.heading {
+    padding: 8px 16px;
+    background: url('../images/bg-slash.gif');
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.heading.heading--mt {
+    margin-top: 24px;
+}
+
+
+/* HOT TOPIC(特集コンテンツ)
+----------------------------------------------- */
 
 .hotTopic {
     display: flex;
@@ -167,14 +182,6 @@ a:link, a:visited, a:hover, a:active {
 
 /* NEWS
 ----------------------------------------------- */
-
-.heading {
-    padding: 8px 16px;
-    margin-top: 24px;
-    background: url('../images/bg-slash.gif');
-    letter-spacing: 1px;
-    font-size: 1.6rem;
-}
 
 .scrollList {
     display: flex;
@@ -302,4 +309,90 @@ a:link, a:visited, a:hover, a:active {
 .article__item__image img {
     width: 100%;
     height: auto;
+}
+
+
+/* ランキング
+----------------------------------------------- */
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    counter-reset: ranking;
+}
+
+.ranking__item {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 0;
+    transition: opacity 0.15s;
+}
+
+.ranking__item:hover {
+    opacity: 0.8;
+}
+
+.ranking__item__image {
+    width: 56px;
+    height: 56px;
+}
+
+.ranking__item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ranking__item__text {
+    flex: 1;
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-left: 8px;
+}
+
+.ranking__item__order {
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    border: 1px solid #ccc;
+    color: #aaa;
+    text-align: center;
+    font-weight: bold;
+    line-height: 14px; /* height - border * 2 */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ranking__item:nth-of-type(1) .ranking__item__order,
+.ranking__item:nth-of-type(2) .ranking__item__order,
+.ranking__item:nth-of-type(3) .ranking__item__order {
+    border: none;
+    color: #282828;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.ranking__item:nth-of-type(1) .ranking__item__order {
+    background-color: #F1ECB1;
+}
+
+.ranking__item:nth-of-type(2) .ranking__item__order {
+    background-color: #B7B7B7;
+}
+
+.ranking__item:nth-of-type(3) .ranking__item__order {
+    background-color: #EBC7BC;
+}
+
+.ranking__item__order::before {
+    display: inline-block;
+    content: counter(ranking);
+    counter-increment: ranking;
+    font-size: 1.0rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
